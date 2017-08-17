@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/playButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/startText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/play"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <ImageView
+        android:id="@+id/lapButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/lapText"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        app:srcCompat="@drawable/lap"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <ImageView
+        android:id="@+id/restartButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/resetText"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/restart"
+        tools:layout_editor_absoluteX="298dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:gravity="center_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="172dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/startText"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start/Stop"
+        android:layout_below="@+id/lapButton"
+        android:layout_alignLeft="@+id/playButton"
+        android:layout_alignStart="@+id/playButton" />
+
+    <TextView
+        android:id="@+id/lapText"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lap"
+        android:layout_below="@+id/restartButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/resetText"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_marginBottom="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/restartButton"
+        android:layout_alignStart="@+id/restartButton"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp" />
+
+</RelativeLayout>
