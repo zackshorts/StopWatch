@@ -12,6 +12,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+//Added to git repository
+
 public class MainActivity extends AppCompatActivity {
     int buttonState = 1;
     long startTime = 0;
